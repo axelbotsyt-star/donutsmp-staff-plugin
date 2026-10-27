@@ -4,7 +4,7 @@ Optimized Paper 1.21.11 staff plugin for VerdantSMP.
 
 ## Features
 
-- /vanish with staff-style toggle messages
+- /vanish
 - /sfmode
 - /staffchat
 - /freeze
@@ -24,6 +24,7 @@ Optimized Paper 1.21.11 staff plugin for VerdantSMP.
 - /report
 - /clearchat
 - /staffmenu
+- GUI staff menu with cleaner layout
 
 ## Build
 
@@ -35,12 +36,13 @@ The generated jar will be in `target/`.
 
 ## Download
 
-You can download the repository as a ZIP from GitHub, then build the jar locally with Maven.
+Download the project source ZIP here:
+https://github.com/axelbotsyt-star/donutsmp-staff-plugin/archive/refs/heads/main.zip
+
+Then build the jar locally with Maven.
 
 ## Notes
 
-- No /staff command
-- No rank system
 - Paper 1.21.11 compatible
-- Optimized to avoid unnecessary server lag
-
+- Optimized to reduce lag
+- Clean GUI menu and permissions
