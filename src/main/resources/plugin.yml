@@ -1,8 +1,8 @@
-name: VerdantSMP Stafff
+name: VerdantSMP Staff
 version: '1.0.0'
 main: com.donutsmp.staff.DonutSMPStaffPlugin
 api-version: '1.21'
-description: VerdantSMP staff utilities with GUI, vanish, and DonutSMP-style moderation tools.
+description: Optimized VerdantSMP staff plugin with vanish, moderation, and a GUI menu.
 commands:
   vanish:
     description: Toggle vanish mode.
@@ -89,7 +89,7 @@ commands:
     usage: /clearchat
     permission: donutsmp.staff.clearchat
   staffmenu:
-    description: Open the VerdantSMP staff menu.
+    description: Open the VerdantSMP Staff menu.
     usage: /staffmenu
     aliases: [smenu]
     permission: donutsmp.staff.menu
