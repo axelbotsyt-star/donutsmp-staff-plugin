@@ -1,0 +1,151 @@
+name: DonutSMPStaff
+version: '1.0.0'
+main: com.donutsmp.staff.DonutSMPStaffPlugin
+api-version: '1.21'
+description: DonutSMP-style staff plugin for Paper 1.21.11 without the /staff command.
+commands:
+  vanish:
+    description: Toggle vanish mode.
+    usage: /vanish
+    aliases: [v]
+    permission: donutsmp.staff.vanish
+  sfmode:
+    description: Toggle staff mode.
+    usage: /sfmode
+    aliases: [smode]
+    permission: donutsmp.staff.staffmode
+  staffchat:
+    description: Talk in staff chat.
+    usage: /staffchat <message>
+    aliases: [sc]
+    permission: donutsmp.staff.chat
+  freeze:
+    description: Freeze or unfreeze a player.
+    usage: /freeze <player>
+    aliases: [fr]
+    permission: donutsmp.staff.freeze
+  mute:
+    description: Mute or unmute a player.
+    usage: /mute <player> [reason]
+    aliases: [m]
+    permission: donutsmp.staff.mute
+  heal:
+    description: Heal a player.
+    usage: /heal [player]
+    aliases: [h]
+    permission: donutsmp.staff.heal
+  feed:
+    description: Feed a player.
+    usage: /feed [player]
+    permission: donutsmp.staff.feed
+  god:
+    description: Toggle invulnerability.
+    usage: /god [player]
+    permission: donutsmp.staff.god
+  tp:
+    description: Teleport to a player.
+    usage: /tp <player>
+    permission: donutsmp.staff.tp
+  tphere:
+    description: Teleport a player to you.
+    usage: /tphere <player>
+    permission: donutsmp.staff.tp
+  inspect:
+    description: Inspect player stats.
+    usage: /inspect <player>
+    aliases: [check]
+    permission: donutsmp.staff.inspect
+  fly:
+    description: Toggle fly mode.
+    usage: /fly [player]
+    permission: donutsmp.staff.fly
+  speed:
+    description: Set movement speed.
+    usage: /speed [player] [value]
+    permission: donutsmp.staff.speed
+  kick:
+    description: Kick a player.
+    usage: /kick <player> [reason]
+    permission: donutsmp.staff.kick
+  ban:
+    description: Ban a player.
+    usage: /ban <player> [reason]
+    permission: donutsmp.staff.ban
+  warn:
+    description: Warn a player.
+    usage: /warn <player> <reason>
+    permission: donutsmp.staff.warn
+  invsee:
+    description: Open another player's inventory.
+    usage: /invsee <player>
+    aliases: [inv]
+    permission: donutsmp.staff.invsee
+  report:
+    description: Report a player.
+    usage: /report <player> <reason>
+    permission: donutsmp.staff.report
+  clearchat:
+    description: Clear the server chat.
+    usage: /clearchat
+    permission: donutsmp.staff.clearchat
+permissions:
+  donutsmp.staff.*:
+    description: All DonutSMP staff permissions.
+    children:
+      donutsmp.staff.vanish: true
+      donutsmp.staff.staffmode: true
+      donutsmp.staff.chat: true
+      donutsmp.staff.freeze: true
+      donutsmp.staff.mute: true
+      donutsmp.staff.heal: true
+      donutsmp.staff.feed: true
+      donutsmp.staff.god: true
+      donutsmp.staff.tp: true
+      donutsmp.staff.inspect: true
+      donutsmp.staff.fly: true
+      donutsmp.staff.speed: true
+      donutsmp.staff.kick: true
+      donutsmp.staff.ban: true
+      donutsmp.staff.warn: true
+      donutsmp.staff.invsee: true
+      donutsmp.staff.report: true
+      donutsmp.staff.clearchat: true
+      donutsmp.staff.seevanish: true
+  donutsmp.staff.vanish:
+    default: op
+  donutsmp.staff.staffmode:
+    default: op
+  donutsmp.staff.chat:
+    default: op
+  donutsmp.staff.freeze:
+    default: op
+  donutsmp.staff.mute:
+    default: op
+  donutsmp.staff.heal:
+    default: op
+  donutsmp.staff.feed:
+    default: op
+  donutsmp.staff.god:
+    default: op
+  donutsmp.staff.tp:
+    default: op
+  donutsmp.staff.inspect:
+    default: op
+  donutsmp.staff.fly:
+    default: op
+  donutsmp.staff.speed:
+    default: op
+  donutsmp.staff.kick:
+    default: op
+  donutsmp.staff.ban:
+    default: op
+  donutsmp.staff.warn:
+    default: op
+  donutsmp.staff.invsee:
+    default: op
+  donutsmp.staff.report:
+    default: op
+  donutsmp.staff.clearchat:
+    default: op
+  donutsmp.staff.seevanish:
+    default: op
