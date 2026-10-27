@@ -1,8 +1,8 @@
-name: DonutSMPStaff
+name: VerdantSMP Stafff
 version: '1.0.0'
 main: com.donutsmp.staff.DonutSMPStaffPlugin
 api-version: '1.21'
-description: DonutSMP-style staff plugin for Paper 1.21.11 without the /staff command.
+description: VerdantSMP staff utilities with GUI, vanish, and DonutSMP-style moderation tools.
 commands:
   vanish:
     description: Toggle vanish mode.
@@ -88,9 +88,14 @@ commands:
     description: Clear the server chat.
     usage: /clearchat
     permission: donutsmp.staff.clearchat
+  staffmenu:
+    description: Open the VerdantSMP staff menu.
+    usage: /staffmenu
+    aliases: [smenu]
+    permission: donutsmp.staff.menu
 permissions:
   donutsmp.staff.*:
-    description: All DonutSMP staff permissions.
+    description: All VerdantSMP staff permissions.
     children:
       donutsmp.staff.vanish: true
       donutsmp.staff.staffmode: true
@@ -110,6 +115,7 @@ permissions:
       donutsmp.staff.invsee: true
       donutsmp.staff.report: true
       donutsmp.staff.clearchat: true
+      donutsmp.staff.menu: true
       donutsmp.staff.seevanish: true
   donutsmp.staff.vanish:
     default: op
@@ -146,6 +152,8 @@ permissions:
   donutsmp.staff.report:
     default: op
   donutsmp.staff.clearchat:
+    default: op
+  donutsmp.staff.menu:
     default: op
   donutsmp.staff.seevanish:
     default: op
